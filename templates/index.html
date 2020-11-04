@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zola-kata-001</title>
+    <link rel="stylesheet" href="{{ get_url(path="material-components-web.min.css") }}"/>
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
+</head>
+<body>
+
+<label class="mdc-text-field mdc-text-field--filled">
+  <span class="mdc-text-field__ripple"></span>
+  <span class="mdc-floating-label" id="my-label">Label</span>
+  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+  <span class="mdc-line-ripple"></span>
+</label>
+
+<script type="text/javascript" src="{{ get_url(path="material-components-web.min.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+
+<script>
+  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+</script>
+
+</body>
+</html>
