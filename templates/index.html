@@ -6,22 +6,54 @@
     <link rel="stylesheet" href="{{ get_url(path="material-components-web.min.css") }}"/>
     <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
 </head>
-<body>
+<body class="mdc-typography">
 
-<label class="mdc-text-field mdc-text-field--filled">
-  <span class="mdc-text-field__ripple"></span>
-  <span class="mdc-floating-label" id="my-label">Label</span>
-  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
-  <span class="mdc-line-ripple"></span>
-</label>
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell">
+      <h2 class="mdc-typography--headline4">Headline 4</h2>
+      <label class="mdc-text-field mdc-text-field--filled" data-mdc-auto-init="MDCTextField">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label">Label</span>
+        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+        <span class="mdc-line-ripple"></span>
+      </label>
+    </div>
+    <div class="mdc-layout-grid__cell">
+      <h2 class="mdc-typography--headline5">Headline 5</h2>
+      <label class="mdc-text-field mdc-text-field--filled" data-mdc-auto-init="MDCTextField">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label">Label</span>
+        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+        <span class="mdc-line-ripple"></span>
+      </label>
+    </div>
+    <div class="mdc-layout-grid__cell">
+      <p class="mdc-typography--body1">This is body 1.</p>
+      <label class="mdc-text-field mdc-text-field--filled" data-mdc-auto-init="MDCTextField">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label">Label</span>
+        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+        <span class="mdc-line-ripple"></span>
+      </label>
+    </div>
+    <div class="mdc-layout-grid__cell">
+      <p class="mdc-typography--body2">This is body 2.</p>
+      <label class="mdc-text-field mdc-text-field--filled" data-mdc-auto-init="MDCTextField">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label">Label</span>
+        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+        <span class="mdc-line-ripple"></span>
+      </label>
+    </div>
+  </div>
+</div>
 
 <script type="text/javascript" src="{{ get_url(path="material-components-web.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
 
-<script>
-  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
-</script>
+<script>mdc.autoInit()</script>
 
 </body>
 </html>
