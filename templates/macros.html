@@ -1,0 +1,8 @@
+{% macro form_input_text(label, name) %}
+<label class="mdc-text-field mdc-text-field--filled" data-mdc-auto-init="MDCTextField">
+  <span class="mdc-text-field__ripple"></span>
+  <span class="mdc-floating-label" id="{{ name }}">{{ label }}</span>
+  <input type="text" class="mdc-text-field__input" aria-labelledby="{{ name }}">
+  <span class="mdc-line-ripple"></span>
+</label>
+{% endmacro %}
