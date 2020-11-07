@@ -1,5 +1,3 @@
-{% import "macros.html" as macros %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,60 +9,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="favicon-16x16.png") }}">
     <link rel="manifest" href="{{ get_url(path="site.webmanifest") }}">
 
-    <link rel="stylesheet" href="{{ get_url(path="material-components-web.min.css") }}"/>
+    <link rel="stylesheet" href="{{ get_url(path="semantic-2.4.1.min.css") }}"/>
     <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
 </head>
-<body class="mdc-typography">
+<body>
 
-<div class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell--span-6 index--cell">
-      <p class="mdc-typography--body1">left</p>
-    </div>
-    <div class="mdc-layout-grid__cell--span-6">
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell--span-6 index--cell">
-          <p class="mdc-typography--body1">right top left</p>
-        </div>
-        <div class="mdc-layout-grid__cell--span-6 index--cell">
-          <p class="mdc-typography--body1">right top right</p>
-        </div>
-      </div>
-      <div class="mdc-layout-grid__inner">
-        <div class="mdc-layout-grid__cell--span-12 index--cell">
-          <p class="mdc-typography--body1">right bottom</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell">
-      <h2 class="mdc-typography--headline4">Headline 4</h2>
-      {{ macros::form_input_text(label="label 1", name = "input-1") }}
-    </div>
-    <div class="mdc-layout-grid__cell">
-      <h2 class="mdc-typography--headline5">Headline 5</h2>
-      {{ macros::form_input_text(label="label 2", name = "input-2") }}
-    </div>
-    <div class="mdc-layout-grid__cell">
-      <p class="mdc-typography--body1">This is body 1.</p>
-      {{ macros::form_input_text(label="label 3", name = "input-3") }}
-    </div>
-    <div class="mdc-layout-grid__cell">
-      <p class="mdc-typography--body2">This is body 2.</p>
-      {{ macros::form_input_text(label="label 4", name = "input-4") }}
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript" src="{{ get_url(path="material-components-web.min.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="jquery-3.5.1.min.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="semantic-2.4.1.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
-
-<script>mdc.autoInit()</script>
 
 </body>
 </html>
