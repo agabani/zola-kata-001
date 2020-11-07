@@ -1,0 +1,85 @@
+.single-price-grid-component {
+    $font-family: 'Karla', sans-serif;
+    $padding: 24px;
+
+    &__description {
+        &__body {
+            background-color: white;
+        }
+
+        &__content {
+            color: hsl(218, 22%, 67%);
+            font-family: $font-family;
+            padding: $padding;
+
+            h1 {
+                color: hsl(179, 62%, 43%);
+            }
+
+            h2 {
+                color: hsl(71, 73%, 54%);
+            }
+        }
+    }
+
+    &__pricing {
+        &__body {
+            background-color: hsl(179, 62%, 43%);
+        }
+
+        &__content {
+            color: hsl(0, 0%, 98%);
+            font-family: $font-family;
+            padding: $padding;
+
+            h3 {
+                margin-bottom: 24px;
+            }
+
+            p {
+                align-items: center;
+                display: flex;
+
+                span:not(:first-child) {
+                    padding-left: 12px;
+                }
+            }
+
+            span.monetary-value {
+                font-size: 32px;
+            }
+
+            span.period {
+                color: hsl(179, 62%, 57%);
+            }
+
+            .button {
+                background-color: hsl(71, 73%, 54%);
+                box-shadow: 0px 0px 16px -6px #888888;
+                color: hsl(204, 43%, 93%);
+                margin-top: 32px;
+
+                &:hover {
+                    background-color: hsl(71, 73%, 45%);
+                    color: hsl(204, 43%, 93%);
+                }
+            }
+        }
+    }
+
+    &__reasons {
+        &__body {
+            background-color: hsl(179, 47%, 52%);
+        }
+
+        &__content {
+            color: hsl(204, 43%, 93%);
+            font-family: $font-family;
+            padding: $padding;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
