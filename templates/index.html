@@ -16,6 +16,20 @@
 </head>
 <body>
 
+<header>
+  <div class="ui menu">
+    <a class="header item" href="{{ get_url(path="/")}}">Zola Kata 001</a>
+    <a class="item" href="{{ get_url(path="@/gpu/_index.md")}}">Graphic Cards</a>
+    <a class="item" href="{{ get_url(path="@/test.md")}}">Formatting Test</a>
+  </div>
+</header>
+
+<div class="ui grid container">
+  {% block content %}
+
+  {% endblock  %}
+</div>
+
 <div class="ui grid container">
   <div class="sixteen wide column">
     <div class="ui grid stackable padded">

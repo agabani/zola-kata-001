@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class="sixteen wide column">
+  <h1>{{ section.title }}</h1>
+
+  {{ section.content | safe }}
+</div>
+
+{% for page in section.pages %}
+<div class="four wide column">
+  <a class="ui fluid card" href="{{ page.permalink }}">
+    <div class="content">
+      <div class="header">{{ page.title }}</div>
+      <div class="meta">
+        <span class="category">AMD</span>
+      </div>
+      <div class="description">
+        {{ page.summary | safe }}
+      </div>
+    </div>
+  </a>
+</div>
+{% endfor %}
+
+{% endblock  %}
