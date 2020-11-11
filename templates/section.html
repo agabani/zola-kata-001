@@ -14,7 +14,7 @@
     <div class="content">
       <div class="header">{{ page.title }}</div>
       <div class="meta">
-        <span class="category">AMD</span>
+        <span class="category">{{ page.extra.designer | upper }} ${{ page.extra.price | as_str }}</span>
       </div>
       <div class="description">
         {{ page.summary | safe }}
