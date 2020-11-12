@@ -21,6 +21,20 @@
     <a class="header item" href="{{ get_url(path="/")}}">Zola Kata 001</a>
     <a class="item" href="{{ get_url(path="@/gpu/_index.md")}}">Graphic Cards</a>
     <a class="item" href="{{ get_url(path="@/test.md")}}">Formatting Test</a>
+
+
+    <div class="right menu">
+      <div class="item">
+        <div class="ui search">
+          <div class="ui icon input">
+            <input class="prompt" type="text" placeholder="Search...">
+            {# <i class="search icon"></i> #}
+          </div>
+          <div class="results"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </header>
 
@@ -68,6 +82,7 @@
 <script type="text/javascript" src="{{ get_url(path="semantic-2.4.1.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
 
 </body>
 </html>
