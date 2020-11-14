@@ -1,0 +1,26 @@
+{
+  "name": "zola-kata-001",
+  "version": "1.0.0",
+  "description": "Zola Kata 001",
+  "main": "./static/index.js",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./static/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agabani/zola-kata-001.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/agabani/zola-kata-001/issues"
+  },
+  "homepage": "https://github.com/agabani/zola-kata-001#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
