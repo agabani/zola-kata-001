@@ -44,11 +44,17 @@ const zola = {
   },
   userInterface: {
     ready() {
+      const $navbar = $('#navbar');
       const $sidebar = $('.ui.sidebar');
 
       $sidebar
         .sidebar('setting', 'transition', 'overlay')
         .sidebar('attach events', '#navbar-button-menu', 'show');
+
+      $navbar
+        .visibility({
+          type: 'fixed',
+        });
     },
   },
 };

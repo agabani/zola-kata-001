@@ -48,15 +48,17 @@
 
 <div class="pusher">
   {# menu start #}
-  <div class="ui container">
-    <div class="ui secondary menu">
-      <div class="item">
-        <img src="{{ get_url(path="android-chrome-192x192.png") }}" />
+  <div id="navbar">
+    <div class="ui container">
+      <div class="ui secondary menu">
+        <div class="item">
+          <img src="{{ get_url(path="android-chrome-192x192.png") }}" />
+        </div>
+        <a class="item" id="navbar-button-menu">
+          <i class="sidebar icon"></i>
+          Menu
+        </a>
       </div>
-      <a class="item" id="navbar-button-menu">
-        <i class="sidebar icon"></i>
-        Menu
-      </a>
     </div>
   </div>
   {# menu end #}
