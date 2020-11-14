@@ -17,9 +17,17 @@
 <body>
 
 <div class="ui sidebar inverted vertical menu">
-  <a class="item" href="{{ get_url(path="/")}}">
-    Home
-  </a>
+  {# brand #}
+  <div class="header item">
+    <a class="ui mini image" href="{{ get_url(path="/")}}">
+      <img src="{{ get_url(path="android-chrome-192x192.png") }}" />
+    </a>
+    &nbsp
+    <a href="{{ get_url(path="/")}}">
+      Zola Kata 001
+    </a>
+  </div>
+  {# search #}
   <div class="item">
     <div class="ui fluid category search">
       <div class="ui icon input">
@@ -29,6 +37,7 @@
       <div class="results"></div>
     </div>
   </div>
+  {# menu #}
   <a class="item" href="{{ get_url(path="@/gpu/_index.md")}}">
     Graphics Cards
   </a>
