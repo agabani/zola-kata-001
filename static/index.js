@@ -13,12 +13,11 @@ const zola = {
         type: 'category',
         apiSettings: {
           responseAsync(settings, callback) {
+            const results = index.search(settings.urlData.query);
+
             const response = {
-              success: true,
               results: {},
             };
-
-            const results = index.search(settings.urlData.query);
 
             $.each(results, (_index, item) => {
               const category = 'AMD' || 'Unknown';
@@ -48,8 +47,8 @@ const zola = {
       const $sidebar = $('.ui.sidebar');
 
       $sidebar
-        .sidebar('setting', 'transition', 'scale down')
-        .sidebar('attach events', '#menu', 'show');
+        .sidebar('setting', 'transition', 'overlay')
+        .sidebar('attach events', '#navbar-button-menu', 'show');
     },
   },
 };
