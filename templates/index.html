@@ -11,69 +11,91 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="favicon-16x16.png") }}">
     <link rel="manifest" href="{{ get_url(path="site.webmanifest") }}">
 
-    <link rel="stylesheet" href="{{ get_url(path="semantic-2.4.1.min.css") }}"/>
+    <link rel="stylesheet" href="{{ get_url(path="semantic-2.4.2.min.css") }}"/>
     <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
-
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <div class="ui stackable menu">
-    <a class="header item" href="{{ get_url(path="/")}}">Zola Kata 001</a>
-    <a class="item" href="{{ get_url(path="@/gpu/_index.md")}}">Graphic Cards</a>
-    <a class="item" href="{{ get_url(path="@/test.md")}}">Formatting Test</a>
-
-
-    <div class="right menu">
-      <div class="item">
-        <div class="ui category search">
-          <div class="ui icon input">
-            <input class="prompt" type="text" placeholder="Search...">
-            {# <i class="search icon"></i> #}
-          </div>
-          <div class="results"></div>
-        </div>
-      </div>
-    </div>
-
+<div class="ui sidebar inverted vertical menu">
+  {# brand #}
+  <div class="header item">
+    <a class="ui mini image" href="{{ get_url(path="/")}}">
+      <img src="{{ get_url(path="android-chrome-192x192.png") }}" />
+    </a>
+    &nbsp
+    <a href="{{ get_url(path="/")}}">
+      Zola Kata 001
+    </a>
   </div>
-</header>
-
-<div class="ui grid container">
-  {% block content %}
-
-  {% endblock  %}
+  {# search #}
+  <div class="item">
+    <div class="ui fluid category search">
+      <div class="ui icon input">
+        <input class="prompt" type="text" placeholder="Search...">
+        <i class="search icon"></i>
+      </div>
+      <div class="results"></div>
+    </div>
+  </div>
+  {# menu #}
+  <a class="item" href="{{ get_url(path="@/gpu/_index.md")}}">
+    Graphics Cards
+  </a>
+  <a class="item" href="{{ get_url(path="@/test.md")}}">
+    Formatting Test
+  </a>
 </div>
 
-<div class="ui grid container">
-  <div class="sixteen wide column">
-    <div class="ui grid stackable padded">
-      <div class="sixteen wide column single-price-grid-component__description__body">
-        <div class="single-price-grid-component__description__content">
-          <h1>Join our community</h1>
-          <h2>30-day, hassle-free money back guarantee</h2>
-          <p>Gain access to our full library of tutorials along with expert code reviews.    Perfect for any developers who are serious about honing their skills.</p>
-        </div>
+<div class="pusher">
+  {# menu start #}
+  <div class="ui container">
+    <div class="ui secondary menu">
+      <div class="item">
+        <img src="{{ get_url(path="android-chrome-192x192.png") }}" />
       </div>
-      <div class="eight wide column single-price-grid-component__pricing__body">
-        <div class="single-price-grid-component__pricing__content">
-          <h3>Monthly Subscription</h3>
-          <p><span class="monetary-value">$29</span><span class="period">per month</span></p>
-          <p>Full access for less than $1 a day</p>
-          <a class="fluid large ui button">Sign Up</a>
+      <a class="item" id="navbar-button-menu">
+        <i class="sidebar icon"></i>
+        Menu
+      </a>
+    </div>
+  </div>
+  {# menu end #}
+
+  <div class="ui grid container">
+    {% block content %}
+
+    {% endblock  %}
+  </div>
+
+  <div class="ui grid container">
+    <div class="sixteen wide column">
+      <div class="ui grid stackable padded">
+        <div class="sixteen wide column single-price-grid-component__description__body">
+          <div class="single-price-grid-component__description__content">
+            <h1>Join our community</h1>
+            <h2>30-day, hassle-free money back guarantee</h2>
+            <p>Gain access to our full library of tutorials along with expert code reviews.    Perfect for any developers who are serious about honing their skills.</p>
+          </div>
         </div>
-      </div>
-      <div class="eight wide column single-price-grid-component__reasons__body">
-        <div class="single-price-grid-component__reasons__content">
-          <h3>Why Us</h3>
-          <p>Tutorials by industry experts</p>
-          <p>Peer & expert code review</p>
-          <p>Coding exercises</p>
-          <p>Access to our GitHub repos</p>
-          <p>Community forum</p>
-          <p>Flashcard decks</p>
-          <p>New videos every week</p>
+        <div class="eight wide column single-price-grid-component__pricing__body">
+          <div class="single-price-grid-component__pricing__content">
+            <h3>Monthly Subscription</h3>
+            <p><span class="monetary-value">$29</span><span class="period">per month</span></p>
+            <p>Full access for less than $1 a day</p>
+            <a class="fluid large ui button">Sign Up</a>
+          </div>
+        </div>
+        <div class="eight wide column single-price-grid-component__reasons__body">
+          <div class="single-price-grid-component__reasons__content">
+            <h3>Why Us</h3>
+            <p>Tutorials by industry experts</p>
+            <p>Peer & expert code review</p>
+            <p>Coding exercises</p>
+            <p>Access to our GitHub repos</p>
+            <p>Community forum</p>
+            <p>Flashcard decks</p>
+            <p>New videos every week</p>
+          </div>
         </div>
       </div>
     </div>
@@ -81,10 +103,10 @@
 </div>
 
 <script type="text/javascript" src="{{ get_url(path="jquery-3.5.1.min.js") }}"></script>
-<script type="text/javascript" src="{{ get_url(path="semantic-2.4.1.min.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="semantic-2.4.2.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
 <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
-<script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
+<script type="text/javascript" src="{{ get_url(path="index.js") }}"></script>
 
 </body>
 </html>
