@@ -12,17 +12,33 @@
 <div class="ui grid container">
   {% for page in section.pages %}
   <div class="sixteen wide mobile eight wide tablet eight wide computer column">
-    <a class="ui fluid card" href="{{ page.permalink }}">
-      <div class="content">
-        <div class="header">{{ page.title }}</div>
-        <div class="meta">
-          <span class="category">{{ page.extra.designer | upper }} ${{ page.extra.price | as_str }}</span>
+    <div class="ui items">
+      <div class="item">
+        <div class="image">
+          {% for asset in page.assets %}
+            {% if asset is ending_with(page.extra.image) %}
+              <img src="{{ get_url(path=asset) }}">
+            {% endif %}
+          {% endfor %}
         </div>
-        <div class="description">
-          {{ page.summary | safe }}
+        <div class="content">
+          <div class="header">{{ page.title }}</div>
+          <div class="meta">
+            <span>{{ page.extra.designer | upper }} </span>
+          </div>
+          <div class="description">
+            <p>{{ page.extra.summary | safe }}</p>
+          </div>
+          <div class="extra">
+            ${{ page.extra.price | as_str }}
+            <a class="ui right floated primary button" href="{{ get_url(path=page.path) }}">
+              More Info
+              <i class="right chevron icon"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </a>
+    </div>
   </div>
   {% endfor %}
 </div>
