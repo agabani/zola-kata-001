@@ -38,16 +38,19 @@
     </div>
   </div>
   {# menu #}
-  <a class="item" href="{{ get_url(path="@/gpu/_index.md") }}">
-    Graphics Cards
-  </a>
+  <div class="item">
+    <div class="header"">Graphics Cards</div>
+    <div class="menu">
+      <a class="item" href="{{ get_url(path="@/gpu/amd/_index.md") }}">AMD</a>
+    </div>
+  </div>
   <a class="item" href="{{ get_url(path="@/test.md") }}">
     Formatting Test
   </a>
 </div>
 
 <div class="pusher">
-  {# menu start #}
+  {# navbar start #}
   <div id="navbar">
     <div class="ui container">
       <div class="ui secondary menu">
@@ -61,13 +64,12 @@
       </div>
     </div>
   </div>
-  {# menu end #}
+  {# navbar end #}
 
-  <div class="ui grid container">
-    {% block content %}
-
-    {% endblock  %}
-  </div>
+  {# content start #}
+  {% block content %}
+  {% endblock  %}
+  {# content end #}
 
   <div class="ui grid container">
     <div class="sixteen wide column">

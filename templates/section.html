@@ -2,26 +2,40 @@
 
 {% block content %}
 
-<div class="sixteen wide column">
-  <h1>{{ section.title }}</h1>
-
-  {{ section.content | safe }}
+<div class="ui grid container">
+  <div class="sixteen wide column">
+    <h1>{{ section.title }}</h1>
+    {{ section.content | safe }}
+  </div>
 </div>
 
-{% for page in section.pages %}
-<div class="four wide column">
-  <a class="ui fluid card" href="{{ page.permalink }}">
-    <div class="content">
-      <div class="header">{{ page.title }}</div>
-      <div class="meta">
-        <span class="category">{{ page.extra.designer | upper }} ${{ page.extra.price | as_str }}</span>
-      </div>
-      <div class="description">
-        {{ page.summary | safe }}
+<div class="ui grid container">
+  {% for page in section.pages %}
+  <div class="sixteen wide mobile eight wide tablet eight wide computer column">
+    <div class="ui items">
+      <div class="item">
+        <div class="image">
+          <img src="{{ get_url(path=page.path ~ page.extra.image) }}">
+        </div>
+        <div class="content">
+          <div class="header">{{ page.title }}</div>
+          <div class="meta">
+          </div>
+          <div class="description">
+            <p>{{ page.extra.summary | safe }}</p>
+          </div>
+          <div class="extra">
+            <div class="ui label">{{ page.extra.price }}</div>
+            <a class="ui right floated primary button" href="{{ get_url(path=page.path) }}">
+              More Info
+              <i class="right chevron icon"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </a>
+  </div>
+  {% endfor %}
 </div>
-{% endfor %}
 
 {% endblock  %}

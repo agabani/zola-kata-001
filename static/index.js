@@ -31,7 +31,7 @@ const zola = {
 
               response.results[category].results.push({
                 title: item.doc.title,
-                description: item.doc.body,
+                description: `${item.doc.body.slice(0, 75)}...`,
                 url: item.ref,
               });
             });
