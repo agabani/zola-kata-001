@@ -2,7 +2,6 @@
 title = "PowerColor AMD Radeon RX 5700XT 8GB Dual Fan Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£377.99"
 summary = "PowerColor AMD Radeon RX 5700 XT 8GB GDDR6 PCIe 4.0 Graphics Card, 2x Fan, 7nm, 2560 Streams, 1605Mhz GPU, 1905Mhz Boost"

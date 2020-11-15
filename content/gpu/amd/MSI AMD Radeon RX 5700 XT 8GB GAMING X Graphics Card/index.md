@@ -2,7 +2,6 @@
 title = "MSI AMD Radeon RX 5700 XT 8GB GAMING X Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£409.99"
 summary = "MSI Radeon RX 5700 XT GAMING X 8GB GDDR6 PCIe 4.0 Graphics Card, 7nm RDNA, 2560 Streams, 1730MHz GPU, 1980MHz Boost"

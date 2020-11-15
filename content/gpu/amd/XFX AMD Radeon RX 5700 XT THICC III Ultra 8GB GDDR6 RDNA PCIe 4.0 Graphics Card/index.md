@@ -2,7 +2,6 @@
 title = "XFX AMD Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 RDNA PCIe 4.0 Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£409.99"
 summary = "XFX Radeon RX 5700 XT THICC III Ultra 8GB GDDR6 PCIe 4.0 Graphics Card, 7nm RDNA, 2560 Streams, 1810MHz, 2025MHz Boost"

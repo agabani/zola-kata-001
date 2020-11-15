@@ -2,7 +2,6 @@
 title = "Sapphire AMD Radeon RX 5700 XT 8GB PULSE Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£394.99"
 summary = "Sapphire Radeon RX 5700 XT PULSE 8GB GDDR6 PCIe 4.0 Graphics Card, 7nm RDNA, 2560 Streams, 1670MHz GPU, 1925MHz Boost"

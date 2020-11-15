@@ -20,13 +20,12 @@
         <div class="content">
           <div class="header">{{ page.title }}</div>
           <div class="meta">
-            <span>{{ page.extra.designer | upper }} </span>
           </div>
           <div class="description">
             <p>{{ page.extra.summary | safe }}</p>
           </div>
           <div class="extra">
-            <span>{{ page.extra.price }}</span>
+            <div class="ui label">{{ page.extra.price }}</div>
             <a class="ui right floated primary button" href="{{ get_url(path=page.path) }}">
               More Info
               <i class="right chevron icon"></i>

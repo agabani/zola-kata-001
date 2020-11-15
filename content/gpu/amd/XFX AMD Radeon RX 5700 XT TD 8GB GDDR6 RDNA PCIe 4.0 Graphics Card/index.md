@@ -2,7 +2,6 @@
 title = "XFX AMD Radeon RX 5700 XT TD 8GB GDDR6 RDNA PCIe 4.0 Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£382.99"
 summary = "XFX Radeon RX 5700 XT TD 8GB GDDR6 PCIe 4.0 Graphics Card, 7nm RDNA, 2560 Streams, 1605MHz, 1905MHz Boost"

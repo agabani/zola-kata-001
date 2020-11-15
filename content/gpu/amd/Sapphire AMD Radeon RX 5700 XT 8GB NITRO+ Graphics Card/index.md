@@ -2,7 +2,6 @@
 title = "Sapphire AMD Radeon RX 5700 XT 8GB NITRO+ Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£431.99"
 summary = "Sapphire RX 5700 XT NITRO+ 8GB GDDR6 PCIe 4.0 Graphics Card, 7nm RDNA, 2560 Streams, 1770MHz GPU, 2010MHz Boost"

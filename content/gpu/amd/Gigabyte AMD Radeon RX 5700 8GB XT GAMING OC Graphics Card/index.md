@@ -2,7 +2,6 @@
 title = "Gigabyte AMD Radeon RX 5700 8GB XT GAMING OC Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£409.99"
 summary = "Gigabyte Radeon RX 5700 XT GAMING OC 8GB GDDR6 PCIe 4 Graphics Card, 7nm RDNA, 2304 Streams, 1650MHz GPU, 1905MHz Boost"

@@ -2,7 +2,6 @@
 title = "MSI AMD Radeon RX 5700 XT 8GB MECH OC Graphics Card"
 
 [extra]
-designer = "amd"
 image = "image.jpg"
 price = "£371.99"
 summary = "MSI Radeon RX 5700 XT MECH OC 8GB GDDR6 PCIe 4.0 Graphics Card, 7nm RDNA, 2560 Streams, 1605MHz GPU, 1925MHz Boost"
