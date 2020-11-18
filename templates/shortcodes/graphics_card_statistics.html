@@ -1,0 +1,55 @@
+<div class="ui four column centered grid">
+
+  {% if stream_processor %}
+  <div class="center aligned column">
+    <div class="ui tiny statistic">
+      <div class="value">
+        {{ stream_processor }}
+      </div>
+      <div class="label">
+        Stream Processors
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if memory_size and memory_type %}
+  <div class="center aligned column">
+    <div class="ui tiny statistic">
+      <div class="value">
+        {{ memory_size }}
+      </div>
+      <div class="label">
+        {{ memory_type }} Memory
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if base_clock %}
+  <div class="center aligned column">
+    <div class="ui tiny statistic">
+      <div class="value">
+        {{ base_clock }}
+      </div>
+      <div class="label">
+        Base Clock
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if boost_clock %}
+  <div class="center aligned column">
+    <div class="ui tiny statistic">
+      <div class="value">
+        {{ boost_clock }}
+      </div>
+      <div class="label">
+        Boost Clock
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</div>
